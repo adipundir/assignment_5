@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+   display: flex;
+   flex-direction: column;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header img{
+    height: 8rem;
+}
+header > ul{
+    display: flex;
+    list-style-type: none;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 0 0.7rem;
+    color: #3a3a3a;
+    display: inline-block;
+}
+header ul li a::after{
+    content: '';
+    display: block;
+    height: 0.2rem;
+    width: 0;
+    background: #3a3a3a;
+    transition:all .5s
+}
+header ul li a:hover::after{
+    width: 100%;
+}
+
+main{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+.left{
+    align-self: flex-start;
+    width: 60%;
+    height: 100%;
+}
+.left h1{
+    align-self: flex-start;
+    padding: 1rem;
+    font-size: 6rem;
+    color: #133b4f;
+    text-transform: uppercase;
+}
+.cum{
+    color: #fca70c;
+}
+.right{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 0 10px;
+}
+.right h2{
+    font-size: xx-large;
+    letter-spacing: 3px;
+    font-family: 'Bebas Neue', cursive;
+    padding: 0 2rem;
+}
+.card{
+    display: flex;
+    width: 200px;
+    width: max-content;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.card img{
+    width: 18rem;
+    border: solid black 2px;
+    border-color: #3a3a3a;
+    border-radius: 1rem;
+}
+.card button{
+    margin-left: 2rem;
+    width: 10rem;
+    height: 2rem;
+    background-color: transparent;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-style: dashed;
+    font-size: larger;
+}
+footer{
+    text-align: center;
+    height: 2rem;
+}
